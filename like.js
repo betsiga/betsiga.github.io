@@ -3,6 +3,8 @@
 	var like = document.getElementById("like-button");
 	var unlike = document.getElementById("unlike-button");
 	like.onclick = show;
+	unlike.onmousedown = convert;
+	unlike.onmouseup = back;
 	unlike.onmouseover = change;
 	unlike.ontouchstart = change;
 }
@@ -22,8 +24,19 @@ function change()
 	unlike.style.top = y;
 }
 
+function convert()
+{
+	var unlike = document.getElementById("unlike-button");
+	unlike.innerText = "喜欢";
+}
 
-window.onbeforeunload = function(event) 
+function back()
+{
+	var unlike = document.getElementById("unlike-button");
+	unlike.innerText = "不喜欢";
+}
+
+window.onunload = function() 
 { 
 	alert("哼"); 
 }
