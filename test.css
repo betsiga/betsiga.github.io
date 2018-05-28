@@ -1,0 +1,52 @@
+body
+{
+	font-family: Verdana, serif;
+	-webkit-user-select:none;
+	background-color: #FFF0F5;
+}
+
+h1
+{
+	text-align: center;
+	margin-top: 10%;
+	font-size: 40pt;
+	color: pink;
+}
+
+.button
+{
+	position: relative;
+	border-radius: 5%;
+	text-align: center;
+	box-shadow: 4px 4px 3px 1px rgba(88,88,88,0.5);
+	font-weight: bold;
+}
+
+.button:hover
+{
+	transition-duration: 200ms;
+	transition-delay: 0s;
+	transform: scale(1.05,1.05);
+	cursor: pointer;
+}
+
+#like-button
+{
+	height: 50px;
+	width: 180px;
+	font-size: 24pt;
+	background-color: #FFC0CB;
+	left: calc(50% - 90px);
+	color: white;
+}
+
+#unlike-button
+{
+	height: 25px;
+	width: 90px;
+	color: #FFC0CB;
+	font-size: 12pt;
+	background-color: white;
+	left: calc(50% - 45px);
+}
+
