@@ -1,9 +1,10 @@
-window.onload = function()
+﻿window.onload = function()
 {
 	var like = document.getElementById("like-button");
 	var unlike = document.getElementById("unlike-button");
 	like.onclick = show;
 	unlike.onmouseover = change;
+	unlike.ontouchstart = change;
 }
 
 function show()
